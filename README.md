@@ -6,6 +6,9 @@ IMAGE RECOGNITION: Image recognition is a widely used application of machine lea
  To build an image recognition system, we can use a Convolutional Neural Network (CNN), which is the most common approach for image recognition tasks.
  Below is a simplified example of how to implement an image recognition system using a CNN in Python with TensorFlow and Keras.
  First ensure you should download all the Liraries.
+
+
+ 
  import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers, models
@@ -13,7 +16,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 
-# Here, we are using MNIST dataset which is a dataset of 28x28 grayscale images of handwritten digits
+
 # The dataset consists of 60,000 training images and 10,000 test images
 (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
 
