@@ -9,15 +9,14 @@ IMAGE RECOGNITION: Image recognition is a widely used application of machine lea
 
 
  
- import numpy as np
+# The dataset consists of 60,000 training images and 10,000 test images
+
+import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
-
-
-# The dataset consists of 60,000 training images and 10,000 test images
 (train_images, train_labels), (test_images, test_labels) = tf.keras.datasets.mnist.load_data()
 
 # Normalize pixel values to be between 0 and 1
